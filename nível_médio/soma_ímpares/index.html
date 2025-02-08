@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Soma de impares</h1>
+    <div id="soma"></div>
+</body>
+<script>
+     let soma = 0
+for (let nu = 1; nu <= 100; nu++) {
+    if (nu % 2 !== 0) { 
+        soma += nu}
+        } 
+        document.getElementById("soma").innerHTML = `soma dos números ímpares de 1 a 100 : ${soma}`
+</script>
+</html>
