@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Pirâmide de Asteriscos</h1>
+    <div id="as"></div>
+</body>
+<script>
+ let linhas = 5
+const as = document.getElementById("as")
+let resultado = ''
+
+for (let i = 1; i <= linhas; i++) {
+    let espacos = ' '.repeat(linhas - i)
+    let asteriscos = '*'.repeat(2 * i - 1)
+    resultado += espacos + asteriscos + "<br>"
+}
+as.innerHTML = `<pre>${resultado}</pre>`;
+
+</script>
+</html>
